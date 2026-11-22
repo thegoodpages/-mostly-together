@@ -10,6 +10,12 @@
 </head>
 <body>
 <main>
+  <div id="welcome" style="background:#f8e9e6;padding:20px;border-radius:16px;margin-bottom:20px;">
+  <h2>Welcome to Mostly Together! 💕</h2>
+  <p>Feeling overwhelmed? You’re in the right place.</p>
+  <p>Start with a Brain Dump. Write down everything on your mind. No organizing required.</p>
+  <button onclick="show('dump')">Let’s get it out of your head →</button>
+</div>
 <header><div class="eyebrow">THE GOOD PAGES STUDIO</div><h1>mostly together<span class="heart">. ♡</span></h1><p style="margin:0">Life organized. More or less.</p></header>
 <section id="home"><h2>Hey, you. ☀️</h2><p>You're doing better than you think.</p><div class="card sage"><strong>Your one thing</strong><p>Start small. You don't have to do it all.</p><button class="primary" onclick="show('start')">Help me start →</button></div><div class="grid"><button class="tile blush" onclick="show('dump')">🧠 Brain Dump<small>Get it out of your head</small></button><button class="tile sage" onclick="show('lists')">✓ My Lists<small>Keep it simple</small></button><button class="tile peach" onclick="show('day')">☀️ My Day<small>Plan without pressure</small></button><button class="tile lavender" onclick="show('focus')">⏱ Focus Mode<small>Just one thing</small></button></div><div class="card white"><strong>Today's reminder ♡</strong><p>Being mostly together still counts as together.</p></div></section>
 <section id="dump" hidden><h2>Brain Dump 🧠</h2><p>Get it out. No judgment.</p><textarea id="thought" rows="3" placeholder="What's on your mind?"></textarea><button class="primary" onclick="addThought()">Add thought</button><ul id="thoughts"></ul></section>
